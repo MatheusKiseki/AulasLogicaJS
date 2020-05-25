@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+
+        let tipo = String(prompt("Soma/Subtração/Divisão/Multiplicação"))
+        let numero1 = parseInt(prompt("Digite seu primeiro número"))
+        let numero2 = parseInt(prompt("Digite seu segundo número"))
+        
+        function calculo(tipo, numero1, numero2) {          
+            if(tipo == "soma"  ){
+            return numero1 + numero2 
+            }
+            if(tipo == "subtração")
+            {
+            return numero1 - numero2
+            }
+            if(tipo == "divisão")
+            {
+            return numero1/numero2
+            }
+            if(tipo == "multiplicação")
+            {
+            return numero1 * numero2
+            }
+        }
+            alert(calculo(tipo, numero1, numero2))
+            
+    </script>
+    
+</body>
+</html>

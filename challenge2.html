@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio 2</title>
+</head>
+<body>
+    
+
+
+
+  
+
+
+
+    <script>
+
+
+     var num1 = prompt("escolha seu número: 0 = pedra, 1 = tesoura, 2 = papel");
+     
+     var num2 = Math.floor(Math.random() *3);
+    
+
+     var jogada1 = ""         
+     var jogada2 = ""
+     
+     if(num1 == 0){
+         jogada1 = "pedra"
+     }
+     if(num1 == 1){
+         jogada1 = "tesoura"
+     }
+     if(num1 == 2){
+         jogada1 = "papel"
+     }
+     if(num2 == 0){
+         jogada2 = "pedra"
+     }
+     if(num2 == 1){
+         jogada2 = "tesoura"
+     }
+     if(num2 == 2){
+         jogada2 = "papel"
+     }
+
+     if(num1 == 0 && num2 == 0 || num1 == 1 && num2 == 1||num1 == 2 && num2 == 2){
+      console.log(`a sua jogada foi ${jogada1} e a jogada da máquina foi: ${jogada2}, ou seja empatou`)
+    }
+     else if (num1 == 0 && num2 == 1 || num1 == 1 && num2 == 2 || num1 == 2 && num2 == 0 ){
+         console.log(`a sua jogada foi ${jogada1} e a jogada da máquina foi: ${jogada2}, ou seja voce ganhou`);
+     }
+     else if (num1 == 0 && num2 == 2 || num1 == 1 && num2 == 0 || num1 == 2 && num2 == 1){
+         console.log(`a sua jogada foi ${jogada1} e a jogada da máquina foi: ${jogada2}, ou seja voce perdeu`);
+     }
+     
+
+
+    </script>
+</body>
+</html>

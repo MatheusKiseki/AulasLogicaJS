@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <script>
+
+
+            var usuarios = [
+            {
+                nome: "Henrique",
+                idade: 17,
+                email: "henrique@mail.com",
+                profissoes: [
+                    "Desenvolvedor"
+                ]
+            },
+            {
+                nome: "Luizão",
+                idade: 80,
+                email: "soPode2naQuadra@mail.com",
+                profissoes:[
+                    "dancarino",
+                    "uber",
+                    "ninja",
+                    "desenvolvedor",                  
+                ]
+            },
+            {
+                nome: "Volare",
+                idade: 18,
+                email: "vitinZika@mail.com",
+                profissoes: [                   
+                    "Ladrão"
+                ]
+            }
+        ]
+
+                    for(var i = 0; i < 3; i++){
+
+                        if(usuarios[i].idade>=18){
+                            console.log(`o usuário de nome ${usuarios[i].nome} de email ${usuarios[i].email} e de idade ${usuarios[i].idade} é maior de idade`);
+                        } 
+                        else{
+                            console.log(`o usuário de nome ${usuarios[i].nome} de email ${usuarios[i].email} e de idade ${usuarios[i].idade} é menor de idade`);
+                        }
+                        
+                    }
+    </script>
+</body>
+</html>
